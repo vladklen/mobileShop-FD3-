@@ -1,0 +1,35 @@
+.Search {
+    display: flex;
+    justify-content: center;
+}
+
+.Search .search__form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: 16px minmax(150px, 900px) 0.5fr;
+}
+
+.Search .search__icon {
+    display: flex;
+    color: gray;
+}
+
+.Search .search__input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.Search .search__root label {
+    margin-right: 10px;
+}
+
+.Search .search__form button {
+    display: flex;
+    padding: 4px 50px;
+}

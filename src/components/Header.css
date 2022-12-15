@@ -1,0 +1,116 @@
+.Header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    background-color: #231f20;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+.Header .header__logo {
+    color: white;
+    padding: 0px 20px;
+}
+.Header .header__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+}
+.Header .header__nav a {
+    text-decoration: none;
+    color: #a6a5a5;
+}
+
+.Header .header__nav .activeLink {
+    color: white;
+}
+
+.Header .header__login {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 20px;
+    z-index: 100;
+}
+
+.Header .header__cart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.Header .header__cart a {
+    color: white;
+}
+.Header .header__cart button {
+    color: #a6a5a5;
+    border-color: #a6a5a5;
+}
+
+.Header .hamburger_open,
+.Header .hamburger_close {
+    display: none;
+}
+@media (max-width: 961px) {
+    .Header {
+        height: 60px;
+        width: 100vw;
+        font-size: 20px;
+    }
+    .Header .header__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        background-color: #231f20;
+        width: 100vw;
+        align-items: center;
+    }
+    .Header .hamburger_open,
+    .Header .hamburger_close {
+        display: block;
+        cursor: pointer;
+    }
+
+    .Header .header__nav.closed {
+        transform: translateY(-150%);
+        opacity: 0;
+        transition: 1s;
+    }
+    .Header .header__nav.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0%);
+        height: 50vh;
+        align-items: center;
+        transition: 1s;
+    }
+}
+@media (max-width: 480px){
+	.Header{
+		padding: 0px;
+	}
+	.Header .header__login{
+		padding: 10px;
+		gap: 10px;
+	}
+	.Header .header__logo{
+		font-size: 1.2rem;
+	}
+}

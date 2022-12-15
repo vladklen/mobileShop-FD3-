@@ -1,0 +1,42 @@
+.Contacts{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.Contacts .contacts__block{
+	display: flex;
+	flex-direction: row;
+}
+.Contacts H2{
+	border-bottom: 2px solid #a6a5a5;
+    padding-bottom: 15px;
+}
+
+.Contacts .contacts__title{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.Contacts p{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.Contacts .contacts__info{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+}
+
+.Contacts .contacts__map{
+	flex: 2;
+	height: 400px;
+}
+
+@media (max-width: 680px){
+	.Contacts .contacts__block{
+		display: flex;
+		flex-direction: column;
+	}
+}
