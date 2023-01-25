@@ -1,6 +1,7 @@
 {
   "name": "online-shop",
   "version": "0.1.0",
+  "homepage": "https://github.com/vladklen/mobileShop-FD3-",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
